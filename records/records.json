@@ -1,34 +1,40 @@
 {
   "records": [
     {
-      "number": 1,
-      "name": "X-Chain Address",
+      "key": 1,
+      "name": "X_CHAIN",
       "regex": "",
-      "description": ""
+      "description": "Address on Avalanche X-Chain"
     },
     {
-      "number": 2,
-      "name": "EVM Address",
+      "key": 2,
+      "name": "P_CHAIN",
       "regex": "",
-      "description": ""
+      "description": "Address on Avalanche P-Chain"
     },
     {
-      "number": 3,
-      "name": "Avatar",
+      "key": 3,
+      "name": "EVM",
       "regex": "",
-      "description": ""
+      "description": "Address on EVM-type network, including Avalanche C-Chain"
     },
     {
-      "number": 4,
-      "name": "CNAME Record",
+      "key": 4,
+      "name": "AVATAR",
       "regex": "",
-      "description": ""
+      "description": "URL to an image which the user wishes to use as their avatar"
     },
     {
-      "number": 5,
-      "name": "A Record",
+      "key": 5,
+      "name": "DNS_CNAME",
       "regex": "",
-      "description": ""
+      "description": "DNS CNAME Record"
+    },
+    {
+      "key": 6,
+      "name": "DNS_A",
+      "regex": "",
+      "description": "DNS A Record"
     }
   ]
 }
