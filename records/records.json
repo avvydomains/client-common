@@ -1,0 +1,34 @@
+{
+  "records": [
+    {
+      "number": 1,
+      "name": "X-Chain Address",
+      "regex": "",
+      "description": ""
+    },
+    {
+      "number": 2,
+      "name": "EVM Address",
+      "regex": "",
+      "description": ""
+    },
+    {
+      "number": 3,
+      "name": "Avatar",
+      "regex": "",
+      "description": ""
+    },
+    {
+      "number": 4,
+      "name": "CNAME Record",
+      "regex": "",
+      "description": ""
+    },
+    {
+      "number": 5,
+      "name": "A Record",
+      "regex": "",
+      "description": ""
+    }
+  ]
+}
