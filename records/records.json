@@ -2,39 +2,52 @@
   "records": [
     {
       "key": 1,
-      "name": "X_CHAIN",
+      "label": "X_CHAIN",
       "regex": "",
+      "name": "X-Chain Address",
       "description": "Address on Avalanche X-Chain"
     },
     {
       "key": 2,
-      "name": "P_CHAIN",
+      "label": "P_CHAIN",
       "regex": "",
+      "name": "P-Chain Address",
       "description": "Address on Avalanche P-Chain"
     },
     {
       "key": 3,
-      "name": "EVM",
+      "label": "EVM",
       "regex": "",
+      "name": "C-Chain / EVM Address",
       "description": "Address on EVM-type network, including Avalanche C-Chain"
     },
     {
       "key": 4,
-      "name": "AVATAR",
+      "label": "VALIDATOR",
       "regex": "",
-      "description": "URL to an image which the user wishes to use as their avatar"
+      "name": "Validator NodeID",
+      "description": "Validator NodeID on the Avalanche Network"
     },
     {
       "key": 5,
-      "name": "DNS_CNAME",
+      "label": "DNS_CNAME",
       "regex": "",
+      "name": "DNS CNAME Record",
       "description": "DNS CNAME Record"
     },
     {
       "key": 6,
-      "name": "DNS_A",
+      "label": "DNS_A",
       "regex": "",
+      "name": "DNS A Record",
       "description": "DNS A Record"
+    },
+    {
+      "key": 7,
+      "label": "AVATAR",
+      "regex": "",
+      "name": "Avatar",
+      "description": "URL to an image which the user wishes to use as their avatar"
     }
   ]
 }
