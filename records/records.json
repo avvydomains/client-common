@@ -2,51 +2,51 @@
   "records": [
     {
       "key": 1,
-      "label": "X_CHAIN",
+      "name": "X_CHAIN",
       "regex": "",
-      "name": "X-Chain Address",
+      "label": "X-Chain Address",
       "description": "Address on Avalanche X-Chain"
     },
     {
       "key": 2,
-      "label": "P_CHAIN",
+      "name": "P_CHAIN",
       "regex": "",
-      "name": "P-Chain Address",
+      "label": "P-Chain Address",
       "description": "Address on Avalanche P-Chain"
     },
     {
       "key": 3,
-      "label": "EVM",
+      "name": "EVM",
       "regex": "",
-      "name": "C-Chain / EVM Address",
+      "label": "C-Chain / EVM Address",
       "description": "Address on EVM-type network, including Avalanche C-Chain"
     },
     {
       "key": 4,
-      "label": "VALIDATOR",
+      "name": "VALIDATOR",
       "regex": "",
-      "name": "Validator NodeID",
+      "label": "Validator NodeID",
       "description": "Validator NodeID on the Avalanche Network"
     },
     {
       "key": 5,
-      "label": "DNS_CNAME",
+      "name": "DNS_CNAME",
       "regex": "",
-      "name": "DNS CNAME Record",
+      "label": "DNS CNAME Record",
       "description": "DNS CNAME Record"
     },
     {
       "key": 6,
-      "label": "DNS_A",
+      "name": "DNS_A",
       "regex": "",
-      "name": "DNS A Record",
+      "label": "DNS A Record",
       "description": "DNS A Record"
     },
     {
       "key": 7,
-      "label": "AVATAR",
+      "name": "AVATAR",
       "regex": "",
-      "name": "Avatar",
+      "label": "Avatar",
       "description": "URL to an image which the user wishes to use as their avatar"
     }
   ]
