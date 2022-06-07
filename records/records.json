@@ -47,7 +47,14 @@
       "name": "AVATAR",
       "regex": "",
       "label": "Avatar",
-      "description": "URL to an image which the user wishes to use as their avatar"
+      "description": "An image which the user wishes to use as their avatar. Value should be a URL which references the image."
+    },
+    {
+      "key": 8,
+      "name": "CONTENT",
+      "regex": "",
+      "label": "Content",
+      "description": "A downloadable file. Value should be a URL (e.g. IPFS, HTTPS, ..) which references the image."
     }
   ]
 }
