@@ -73,6 +73,14 @@
       },
       "label": "Content",
       "description": "A downloadable file. Value should be a URL (e.g. IPFS, HTTPS, ..) which references the image."
+    },
+    {
+      "key": 9,
+      "name": "PHONE",
+      "regex": {
+      },
+      "label": "Phone Number",
+      "description": "A telephone number. Should conform to the \"tel\" URL scheme defined in RFC2806."
     }
   ]
 }
