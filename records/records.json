@@ -80,7 +80,7 @@
       "regex": {
       },
       "label": "Phone Number",
-      "description": "A telephone number. Should conform to the \"tel\" URL scheme defined in RFC2806."
+      "description": "A telephone number. Should conform to E.164 international number format."
     }
   ]
 }
