@@ -2693,6 +2693,197 @@
         }
       ]
     },
+    "NameHashV1": {
+      "address": "0x56eEB3b592274b53fd070546d74D1174c9A7bdCb",
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "contract ContractRegistryInterface",
+              "name": "contractRegistry",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "constructor"
+        },
+        {
+          "inputs": [],
+          "name": "_contractRegistry",
+          "outputs": [
+            {
+              "internalType": "contract ContractRegistryInterface",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes",
+              "name": "_sl",
+              "type": "bytes"
+            }
+          ],
+          "name": "bytesToUint",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "ret",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "pure",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes",
+              "name": "name",
+              "type": "bytes"
+            }
+          ],
+          "name": "hashBytes",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "hash",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "name",
+              "type": "string"
+            }
+          ],
+          "name": "hashString",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "hash",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256[]",
+              "name": "inputSignals",
+              "type": "uint256[]"
+            }
+          ],
+          "name": "inputSignalsToBytes",
+          "outputs": [
+            {
+              "internalType": "bytes",
+              "name": "name",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256[]",
+              "name": "inputSignals",
+              "type": "uint256[]"
+            }
+          ],
+          "name": "inputSignalsToString",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "name",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes",
+              "name": "_sl",
+              "type": "bytes"
+            }
+          ],
+          "name": "labelToUint",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "ret1",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "ret2",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "pure",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "i",
+              "type": "uint256"
+            }
+          ],
+          "name": "uintToBytes",
+          "outputs": [
+            {
+              "internalType": "bytes",
+              "name": "b",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "i1",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "i2",
+              "type": "uint256"
+            }
+          ],
+          "name": "uintsToLabel",
+          "outputs": [
+            {
+              "internalType": "bytes",
+              "name": "",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        }
+      ]
+    },
     "NamespaceV1": {
       "address": "0x72cbb66B23dC7D98E46f0602aC2258F863297440",
       "abi": [
@@ -3934,6 +4125,102 @@
               "internalType": "uint256[]",
               "name": "preimage",
               "type": "uint256[]"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        }
+      ]
+    },
+    "ResolutionUtilsV2": {
+      "address": "0x1a955A1238Fa60257dC15b477B4d5b5C6CbC0899",
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "contract ContractRegistryInterface",
+              "name": "_contractRegistry",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "constructor"
+        },
+        {
+          "inputs": [],
+          "name": "contractRegistry",
+          "outputs": [
+            {
+              "internalType": "contract ContractRegistryInterface",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "key",
+              "type": "string"
+            }
+          ],
+          "name": "resolve",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "value",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "key",
+              "type": "uint256"
+            }
+          ],
+          "name": "resolveStandard",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "value",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "addy",
+              "type": "address"
+            }
+          ],
+          "name": "reverseResolveEVMToName",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "preimage",
+              "type": "string"
             }
           ],
           "stateMutability": "view",
