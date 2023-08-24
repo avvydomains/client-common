@@ -2,6 +2,164 @@
   "name": "mainnet",
   "chainId": "43114",
   "contracts": {
+    "Base58": {
+      "address": "0x3616299b7D270E36c8Df8a05B00477cB5c89ACfC",
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "bytes",
+              "name": "data_",
+              "type": "bytes"
+            }
+          ],
+          "name": "decode",
+          "outputs": [
+            {
+              "internalType": "bytes",
+              "name": "",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "pure",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "data_",
+              "type": "string"
+            }
+          ],
+          "name": "decodeFromString",
+          "outputs": [
+            {
+              "internalType": "bytes",
+              "name": "",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "pure",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes",
+              "name": "data_",
+              "type": "bytes"
+            }
+          ],
+          "name": "encode",
+          "outputs": [
+            {
+              "internalType": "bytes",
+              "name": "",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "pure",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "data_",
+              "type": "string"
+            }
+          ],
+          "name": "encodeFromString",
+          "outputs": [
+            {
+              "internalType": "bytes",
+              "name": "",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "pure",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes",
+              "name": "data_",
+              "type": "bytes"
+            }
+          ],
+          "name": "encodeToString",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "pure",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes",
+              "name": "data_",
+              "type": "bytes"
+            },
+            {
+              "internalType": "bytes1",
+              "name": "char_",
+              "type": "bytes1"
+            }
+          ],
+          "name": "indexOf",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            },
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ],
+          "stateMutability": "pure",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes",
+              "name": "data_",
+              "type": "bytes"
+            },
+            {
+              "internalType": "uint256",
+              "name": "start_",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "end_",
+              "type": "uint256"
+            }
+          ],
+          "name": "slice",
+          "outputs": [
+            {
+              "internalType": "bytes",
+              "name": "",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "pure",
+          "type": "function"
+        }
+      ]
+    },
     "ConstraintsAVAXV1": {
       "address": "0x121c0af084bB7FdD965dA1741687b1248e2FE465",
       "abi": [
@@ -5400,6 +5558,628 @@
             {
               "internalType": "bool",
               "name": "",
+              "type": "bool"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        }
+      ]
+    },
+    "SolRsaVerify": {
+      "address": "0xE4535a8eaa86e5b18BC2F0e295dd167dBf6b40e8",
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "_sha256",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "bytes",
+              "name": "_s",
+              "type": "bytes"
+            },
+            {
+              "internalType": "bytes",
+              "name": "_e",
+              "type": "bytes"
+            },
+            {
+              "internalType": "bytes",
+              "name": "_m",
+              "type": "bytes"
+            }
+          ],
+          "name": "pkcs1Sha256Verify",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes",
+              "name": "_data",
+              "type": "bytes"
+            },
+            {
+              "internalType": "bytes",
+              "name": "_s",
+              "type": "bytes"
+            },
+            {
+              "internalType": "bytes",
+              "name": "_e",
+              "type": "bytes"
+            },
+            {
+              "internalType": "bytes",
+              "name": "_m",
+              "type": "bytes"
+            }
+          ],
+          "name": "pkcs1Sha256VerifyRaw",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        }
+      ]
+    },
+    "ValidatorNodeIDReverseResolverV1": {
+      "address": "0x668C320A76B92694739bbD6E84bf4ACc3093200A",
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "contract ContractRegistryInterface",
+              "name": "_contractRegistry",
+              "type": "address"
+            },
+            {
+              "internalType": "contract AuthenticatedReverseResolverTargetAuthInterface",
+              "name": "_targetAuth",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "constructor"
+        },
+        {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "uint256",
+              "name": "name",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256[]",
+              "name": "path",
+              "type": "uint256[]"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "target",
+              "type": "string"
+            }
+          ],
+          "name": "EntrySet",
+          "type": "event"
+        },
+        {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "bytes32",
+              "name": "role",
+              "type": "bytes32"
+            },
+            {
+              "indexed": true,
+              "internalType": "bytes32",
+              "name": "previousAdminRole",
+              "type": "bytes32"
+            },
+            {
+              "indexed": true,
+              "internalType": "bytes32",
+              "name": "newAdminRole",
+              "type": "bytes32"
+            }
+          ],
+          "name": "RoleAdminChanged",
+          "type": "event"
+        },
+        {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "bytes32",
+              "name": "role",
+              "type": "bytes32"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "sender",
+              "type": "address"
+            }
+          ],
+          "name": "RoleGranted",
+          "type": "event"
+        },
+        {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "bytes32",
+              "name": "role",
+              "type": "bytes32"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "sender",
+              "type": "address"
+            }
+          ],
+          "name": "RoleRevoked",
+          "type": "event"
+        },
+        {
+          "inputs": [],
+          "name": "DEFAULT_ADMIN_ROLE",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [],
+          "name": "MANAGER_ROLE",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "name",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "path",
+              "type": "uint256[]"
+            }
+          ],
+          "name": "clear",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "name",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "path",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "string",
+              "name": "target",
+              "type": "string"
+            },
+            {
+              "internalType": "bytes",
+              "name": "auth",
+              "type": "bytes"
+            }
+          ],
+          "name": "clearTarget",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function"
+        },
+        {
+          "inputs": [],
+          "name": "contractRegistry",
+          "outputs": [
+            {
+              "internalType": "contract ContractRegistryInterface",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "target",
+              "type": "string"
+            }
+          ],
+          "name": "get",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "name",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "hash",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "name",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "hash",
+              "type": "uint256"
+            }
+          ],
+          "name": "getEntry",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "entry",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "role",
+              "type": "bytes32"
+            }
+          ],
+          "name": "getRoleAdmin",
+          "outputs": [
+            {
+              "internalType": "bytes32",
+              "name": "",
+              "type": "bytes32"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "role",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "grantRole",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "role",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "hasRole",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "role",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "renounceRole",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "role",
+              "type": "bytes32"
+            },
+            {
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "revokeRole",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "name",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256[]",
+              "name": "path",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "string",
+              "name": "target",
+              "type": "string"
+            },
+            {
+              "internalType": "bytes",
+              "name": "auth",
+              "type": "bytes"
+            }
+          ],
+          "name": "set",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "contract AuthenticatedReverseResolverTargetAuthInterface",
+              "name": "_targetAuth",
+              "type": "address"
+            }
+          ],
+          "name": "setTargetAuth",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes4",
+              "name": "interfaceId",
+              "type": "bytes4"
+            }
+          ],
+          "name": "supportsInterface",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [],
+          "name": "targetAuth",
+          "outputs": [
+            {
+              "internalType": "contract AuthenticatedReverseResolverTargetAuthInterface",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        }
+      ]
+    },
+    "ValidatorNodeIDTargetAuthV1": {
+      "address": "0x5Ed72F4d9b459daF46B2228265C74F834F03eE73",
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "bytes",
+              "name": "certificate",
+              "type": "bytes"
+            }
+          ],
+          "name": "certificateToModulusAndExponent",
+          "outputs": [
+            {
+              "internalType": "bytes",
+              "name": "modulus",
+              "type": "bytes"
+            },
+            {
+              "internalType": "bytes",
+              "name": "exponent",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes",
+              "name": "certificate",
+              "type": "bytes"
+            }
+          ],
+          "name": "certificateToNodeID",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "timestamp",
+              "type": "uint256"
+            }
+          ],
+          "name": "getMessage",
+          "outputs": [
+            {
+              "internalType": "bytes",
+              "name": "message",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "pure",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "timestamp",
+              "type": "uint256"
+            }
+          ],
+          "name": "getMessageString",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "message",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "pure",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "target",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "internalType": "bytes",
+              "name": "auth",
+              "type": "bytes"
+            }
+          ],
+          "name": "verify",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "valid",
               "type": "bool"
             }
           ],
