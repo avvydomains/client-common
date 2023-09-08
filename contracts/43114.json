@@ -1896,6 +1896,69 @@
         }
       ]
     },
+    "ENSUtilsV1": {
+      "address": "0x40b0DC99681Db9703939bd62D76F4D448ab0fdE5",
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "contract ContractRegistryInterface",
+              "name": "_contractRegistry",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "constructor"
+        },
+        {
+          "inputs": [],
+          "name": "contractRegistry",
+          "outputs": [
+            {
+              "internalType": "contract ContractRegistryInterface",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes",
+              "name": "reverseAddress",
+              "type": "bytes"
+            }
+          ],
+          "name": "reverse",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "resolvedName",
+              "type": "string"
+            },
+            {
+              "internalType": "address",
+              "name": "resolvedAddress",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "reverseResolverAddress",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "resolverAddress",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        }
+      ]
+    },
     "EVMReverseResolverV1": {
       "address": "0xF4A1328B2d3BFd7aca965B6CcB688F1BE54838D0",
       "abi": [
