@@ -6556,6 +6556,61 @@
         }
       ]
     },
+    "ResolutionUtilsProxy": {
+      "address": "0x5BBD3a8E215B1fC30595fd1Aba4F3FcDbB614078",
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "contract ContractRegistryInterface",
+              "name": "_contractRegistry",
+              "type": "address"
+            },
+            {
+              "internalType": "string",
+              "name": "_contractKey",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "constructor"
+        },
+        {
+          "stateMutability": "payable",
+          "type": "fallback"
+        },
+        {
+          "inputs": [],
+          "name": "contractKey",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [],
+          "name": "contractRegistry",
+          "outputs": [
+            {
+              "internalType": "contract ContractRegistryInterface",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "stateMutability": "payable",
+          "type": "receive"
+        }
+      ]
+    },
     "ResolutionUtilsV1": {
       "address": "0xcF26B69b98800a3b924304212D78bBff2163848f",
       "abi": [
