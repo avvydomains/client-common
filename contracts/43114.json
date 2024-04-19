@@ -2480,6 +2480,61 @@
         }
       ]
     },
+    "ENSUtilsProxy": {
+      "address": "0x24DFa1455A75f64800BFdB2447958D2B632b94f6",
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "contract ContractRegistryInterface",
+              "name": "_contractRegistry",
+              "type": "address"
+            },
+            {
+              "internalType": "string",
+              "name": "_contractKey",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "constructor"
+        },
+        {
+          "stateMutability": "payable",
+          "type": "fallback"
+        },
+        {
+          "inputs": [],
+          "name": "contractKey",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [],
+          "name": "contractRegistry",
+          "outputs": [
+            {
+              "internalType": "contract ContractRegistryInterface",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "stateMutability": "payable",
+          "type": "receive"
+        }
+      ]
+    },
     "ENSUtilsV1": {
       "address": "0x40b0DC99681Db9703939bd62D76F4D448ab0fdE5",
       "abi": [
@@ -2535,6 +2590,298 @@
             {
               "internalType": "address",
               "name": "resolverAddress",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        }
+      ]
+    },
+    "ENSUtilsV2": {
+      "address": "0x0EDA383ED230Ab595CCb13403104575e59462202",
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "contract ContractRegistryInterface",
+              "name": "_contractRegistry",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "constructor"
+        },
+        {
+          "inputs": [],
+          "name": "contractRegistry",
+          "outputs": [
+            {
+              "internalType": "contract ContractRegistryInterface",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes",
+              "name": "name",
+              "type": "bytes"
+            }
+          ],
+          "name": "decodeNameCalldata",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "plaintext",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint8",
+              "name": "c",
+              "type": "uint8"
+            }
+          ],
+          "name": "fromHexChar",
+          "outputs": [
+            {
+              "internalType": "uint8",
+              "name": "",
+              "type": "uint8"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes",
+              "name": "name",
+              "type": "bytes"
+            }
+          ],
+          "name": "getAddr",
+          "outputs": [
+            {
+              "internalType": "address payable",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "name",
+              "type": "string"
+            }
+          ],
+          "name": "getRootName",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "set",
+              "type": "bool"
+            },
+            {
+              "internalType": "string",
+              "name": "rootName",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "s",
+              "type": "string"
+            }
+          ],
+          "name": "hexStringToAddress",
+          "outputs": [
+            {
+              "internalType": "bytes",
+              "name": "",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes",
+              "name": "name",
+              "type": "bytes"
+            },
+            {
+              "internalType": "bytes",
+              "name": "data",
+              "type": "bytes"
+            }
+          ],
+          "name": "resolve",
+          "outputs": [
+            {
+              "internalType": "bytes",
+              "name": "",
+              "type": "bytes"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "key",
+              "type": "string"
+            }
+          ],
+          "name": "resolveCustom",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "value",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "internalType": "uint256",
+              "name": "key",
+              "type": "uint256"
+            }
+          ],
+          "name": "resolveStandard",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "value",
+              "type": "string"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes32",
+              "name": "node",
+              "type": "bytes32"
+            }
+          ],
+          "name": "resolver",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes",
+              "name": "reverseAddress",
+              "type": "bytes"
+            }
+          ],
+          "name": "reverse",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "resolvedName",
+              "type": "string"
+            },
+            {
+              "internalType": "address",
+              "name": "resolvedAddress",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "reverseResolverAddress",
+              "type": "address"
+            },
+            {
+              "internalType": "address",
+              "name": "resolverAddress",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "bytes4",
+              "name": "interfaceId",
+              "type": "bytes4"
+            }
+          ],
+          "name": "supportsInterface",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "string",
+              "name": "s",
+              "type": "string"
+            }
+          ],
+          "name": "toAddress",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
               "type": "address"
             }
           ],
